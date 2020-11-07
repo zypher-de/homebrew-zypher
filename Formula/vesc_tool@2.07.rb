@@ -16,7 +16,7 @@ class VescToolAT207 < Formula
 	system "make", "clean"
 	system "make", "-j8"
     prefix.install "build/macos/vesc_tool_2.07.app"
-	bin.install_symlink "prefix/vesc_tool_2.07.app/Contents/MacOS/vesc_tool_2.07"
+	bin.install_symlink prefix/"vesc_tool_2.07.app/Contents/MacOS/vesc_tool_2.07"
   end
 
   test do
