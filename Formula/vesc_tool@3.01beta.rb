@@ -7,7 +7,7 @@ class VescToolAT301beta < Formula
   version "3.01beta"
   license "GPL-3.0"
 
-  depends_on "qt"
+  depends_on "qt@5"
 
   def install
     ENV.deparallelize  # if your formula fails when building in parallel
