@@ -14,8 +14,8 @@ class VescTool < Formula
 	system "qmake -config release 'CONFIG += release_macos build_free'"
 	system "make", "clean"
 	system "make", "-j8"
-    prefix.install "build/macos/vesc_tool_3.01.app"
-	bin.install_symlink prefix/"vesc_tool_3.01.app/Contents/MacOS/vesc_tool_3.01"
+    prefix.install "build/macos/Vesc Tool.app"
+	bin.install_symlink prefix/"Vesc Tool.app/Contents/MacOS/Vesc Tool"
   end
 
   test do
